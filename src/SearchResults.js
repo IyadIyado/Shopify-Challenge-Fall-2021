@@ -8,7 +8,7 @@ export default function SearchResults(props) {
 
     //api fetching function
     useEffect(() => {
-        fetch("http://www.omdbapi.com/?apikey=64673092&type=movie&s=" + props.data)
+        fetch("https://www.omdbapi.com/?apikey=64673092&type=movie&s=" + props.data)
             .then(res => res.json())
             .then(
                 (result) => {
