@@ -3,7 +3,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: linear-gradient(
-    120deg,
+    90deg,
     rgba(253, 29, 29, 0.75) 0%,
     rgba(252, 176, 69, 0.75) 100%
   );

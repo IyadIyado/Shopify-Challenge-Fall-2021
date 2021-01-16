@@ -97,7 +97,7 @@ export default function App() {
 
 						<Posters list={nominationList}/>
 
-						<Grid item xs={12} id={"SearchBar"}>
+						<Grid item xs={12} id={"SearchBar"} >
 							<Paper elevation={7}>
 							<TextField
 							id="SearchBarInput"
