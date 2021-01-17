@@ -126,7 +126,7 @@ export default function App() {
 
 						<Snackbar open={open} autoHideDuration={5000} onClose={handleClose}>
 							<Alert onClose={handleClose} severity="success">
-								Congratuilations! You've nominated 5 movies!
+								Congratulations! You've nominated 5 movies!
 							</Alert>
 						</Snackbar>
 							
