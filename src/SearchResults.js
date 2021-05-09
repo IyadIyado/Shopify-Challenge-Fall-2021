@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Button from "@material-ui/core/Button";
 
+
 export default function SearchResults(props) {
     const [error, setError] = useState(null);
     const [isLoaded, setIsLoaded] = useState(false);
@@ -36,18 +37,22 @@ export default function SearchResults(props) {
                     <ul>
                         {items[0].Search.map((movie) => (
                             <li key={movie.imdbID} style={{margin:"1.5em"}}>
-                                {movie.Title} ({movie.Year})
-                                <Button
-                                size="small"
-                                disableElevation 
-                                variant="contained"
-                                color="secondary"
-                                style={{float:"right", marginRight: "1%"}}
-                                id={movie.imdbID}
-                                disabled={props.buttonCheck(movie.imdbID)} 
-                                onClick={() => {props.addNomination(movie, movie.imdbID);}}>
-                                    Nominate 🥇
-                                </Button>
+                                
+                                    {movie.Title} ({movie.Year})
+                                
+                                
+                                    <Button
+                                    size="small"
+                                    disableElevation 
+                                    variant="contained"
+                                    color="secondary"
+                                    style={{float:"right", marginRight: "1%"}}
+                                    id={movie.imdbID}
+                                    disabled={props.buttonCheck(movie.imdbID)} 
+                                    onClick={() => {props.addNomination(movie, movie.imdbID);}}>
+                                        Nominate 🥇
+                                    </Button>
+                                
                             </li>
                         ))}
                     </ul>

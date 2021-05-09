@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "@material-ui/core/Button";
+import {Grid} from "@material-ui/core"
 import "./CSS/Nominations.css";
 
 export default function Nominations(props) {
@@ -20,17 +21,22 @@ export default function Nominations(props) {
                 className={"swing-in-top-fwd"}
                 style={{ margin: "1.5em" }}
             >
-                {movie.Title} ({movie.Year})
-                <Button
-                onClick={() => removeMovie(movie)}
-                size="small"
-                disableElevation
-                variant="outlined"
-                style={{ float: "right", marginRight: "1%" }}
-                color="secondary"
-                >
-                Remove ❌
-                </Button>
+                <Grid item>
+                    {movie.Title} ({movie.Year})
+                </Grid>
+
+                <Grid item>
+                    <Button
+                    onClick={() => removeMovie(movie)}
+                    size="small"
+                    disableElevation
+                    variant="outlined"
+                    style={{ float: "right", marginRight: "1%" }}
+                    color="secondary"
+                    >
+                    Remove ❌
+                    </Button>
+                </Grid>
             </li>
             ))}
         </ol>
